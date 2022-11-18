@@ -90,10 +90,10 @@ function App() {
             <div className='blog-text-pack'>
               <p className='blog-text-pack__subtitle'>Полезные статьи</p>
               <p className='blog-text-pack__title'>Лучшие советы по подбору дорогих подарков</p>
-              <div>
-                <NavLink><div><span>Как выбрать часы для своей будущей жены</span></div></NavLink>
-                <NavLink><div><span>Запонки для мужа: 7 ключевых правил покупки аксессуара</span></div></NavLink>
-                <NavLink><div><span>Как выбрать обручальные кольца молодоженам</span></div></NavLink>
+              <div className='blog-image-pack'>
+                <NavLink className="blog-image-pack__custom-link"><div className='blog-image-pack__first'><span className='blog-text-pack__card'>Как выбрать часы для своей будущей жены</span></div></NavLink>
+                <NavLink className="blog-image-pack__custom-link"><div className='blog-image-pack__second'><span className='blog-text-pack__card'>Запонки для мужа: <br />7 ключевых правил покупки аксессуара</span></div></NavLink>
+                <NavLink className="blog-image-pack__custom-link"><div className='blog-image-pack__third'><span className='blog-text-pack__card'>Как выбрать обручальные кольца молодоженам</span></div></NavLink>
               </div>
               <NavLink className='blog-text-pack__link' to='/blog'>ЧИТАТЬ НАШ БЛОГ</NavLink>
             </div>

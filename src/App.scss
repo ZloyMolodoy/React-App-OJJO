@@ -265,26 +265,30 @@
         }
     }
 }
-.blog
-{
-    &-text-pack
-    {
-        &__title
-        {
+
+.blog {
+    &-text-pack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+        &__title {
             font-family: 'Noto Serif';
             font-weight: 700;
             font-size: 28px;
             color: #333333;
+            margin-top: 15px;
         }
-        &__subtitle
-        {
+
+        &__subtitle {
             font-family: 'Roboto';
             font-weight: 400;
             font-size: 18px;
             color: #333333;
         }
-        &__link
-        {
+
+        &__link {
             background-color: #333333;
             color: white;
             text-decoration: none;
@@ -292,6 +296,54 @@
             font-size: 14px;
             font-weight: 500;
             margin-top: 50px;
+        }
+        &__card
+        {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 18px;
+            color: white;
+            margin: 0 auto 40px auto;
+            max-width: 200px;
+        }
+    }
+    &-image-pack
+    {
+        display: flex;
+        margin-top: 60px;
+        &__first
+        {
+            background-image: url(/src/components/images/div-blog/first-card.png);
+            background-repeat: no-repeat;
+            height: 310px;
+            width: 354px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        &__second
+        {
+            background-image: url(/src/components/images/div-blog/second-card.png);
+            background-repeat: no-repeat;
+            height: 310px;
+            width: 354px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        &__third
+        {
+            background-image: url(/src/components/images/div-blog/third-card.png);
+            background-repeat: no-repeat;
+            height: 310px;
+            width: 354px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        &__custom-link
+        {
+            text-decoration: none;
         }
     }
 }
