@@ -257,6 +257,7 @@
   font-size: 14px;
   font-weight: 500;
   margin-top: 50px;
+  padding: 15px 35px;
 }
 .blog-text-pack__card {
   font-family: "Roboto";
@@ -299,6 +300,22 @@
 }
 .blog-image-pack__custom-link {
   text-decoration: none;
+}
+
+.social {
+  display: flex;
+}
+.social-text-pack__subtitle {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+}
+.social-text-pack__title {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-size: 26px;
+  color: #333333;
 }
 
 .container {

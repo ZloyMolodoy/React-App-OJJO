@@ -99,6 +99,15 @@ function App() {
             </div>
           </div>
         </div>
+        <div className='social'>
+          <div className='container'>
+            <p className='social-text-pack__subtitle'>#ojjo_jewerly</p>
+            <p className='social-text-pack__title'>Мы в социальных сетях</p>
+            <div>
+
+            </div>
+          </div>
+        </div>
       </BrowserRouter>
     </div>
   );
