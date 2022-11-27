@@ -1,0 +1,51 @@
+.footer {
+    margin-top: 150px;
+
+    &Main {
+        background-image: url(/src/components/images/map-bg.png);
+        width: 100%;
+    }
+
+    &TextPack {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &Subtitle {
+            color: white;
+            font-size: 18px;
+            font-family: 'Roboto';
+            font-weight: 400;
+        }
+
+        &Title {
+            color: white;
+            font-size: 26px;
+            font-family: 'Noto Serif';
+            font-weight: 700;
+            padding-top: 15px;
+        }
+    }
+
+    &Email {
+        margin-top: 80px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &Left {
+            display: flex;
+            flex-direction: column;
+
+            &Link {
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, NavLink, } from 'react-router-dom';
-import Main from './components/Main';
-import Catalog from './components/Catalog';
+
+import Footer from './components/Footer';
 
 import logo from './components/images/logo.png'
 import search from './components/images/nav-search.png';
@@ -103,12 +103,18 @@ function App() {
           <div className='container'>
             <p className='social-text-pack__subtitle'>#ojjo_jewerly</p>
             <p className='social-text-pack__title'>Мы в социальных сетях</p>
-            <div>
-
+            <div className='social-content'>
+              <div className='social-content__first'></div>
+              <div className='social-content__second'></div>
+              <div className='social-content__third'></div>
+              <div className='social-content__fourth'></div>
+              <div className='social-content__fifth'></div>
+              <div className='social-content__sixth'></div>
             </div>
           </div>
         </div>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

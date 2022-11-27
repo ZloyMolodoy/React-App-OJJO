@@ -304,18 +304,52 @@
 
 .social {
   display: flex;
+  margin-top: 120px;
 }
 .social-text-pack__subtitle {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   color: #333333;
+  text-align: center;
 }
 .social-text-pack__title {
   font-family: "Noto Serif";
   font-weight: 700;
   font-size: 26px;
   color: #333333;
+  text-align: center;
+}
+.social-content {
+  margin-top: 60px;
+  display: grid;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: "first first second third" "fourth fifth sixth sixth";
+}
+.social-content__first {
+  background-image: url(./components/images/div-social/first-social.png);
+  grid-area: first;
+}
+.social-content__second {
+  background-image: url(./components/images/div-social/second-social.png);
+  grid-area: second;
+}
+.social-content__third {
+  background-image: url(./components/images/div-social/third-social.png);
+  grid-area: third;
+}
+.social-content__fourth {
+  background-image: url(./components/images/div-social/fourth-social.png);
+  grid-area: fourth;
+}
+.social-content__fifth {
+  background-image: url(./components/images/div-social/fifth-social.png);
+  grid-area: fifth;
+}
+.social-content__sixth {
+  background-image: url(./components/images/div-social/sixth-social.png);
+  grid-area: sixth;
 }
 
 .container {

@@ -1,0 +1,44 @@
+.footer {
+  margin-top: 150px;
+}
+.footerMain {
+  background-image: url(/src/components/images/map-bg.png);
+  width: 100%;
+}
+.footerTextPack {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerTextPackSubtitle {
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.footerTextPackTitle {
+  color: white;
+  font-size: 26px;
+  font-family: "Noto Serif";
+  font-weight: 700;
+  padding-top: 15px;
+}
+.footerEmail {
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footerEmailLeft {
+  display: flex;
+  flex-direction: column;
+}
+.footerEmailLeftLink {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=footer.module.css.map */
