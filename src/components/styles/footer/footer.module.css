@@ -26,6 +26,7 @@
 }
 .footerEmail {
   margin-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -40,5 +41,98 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin: 5px 0;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+}
+.footerEmailLeftLinkItemLink {
+  margin-right: 10px;
+}
+.footerEmailRightBorder {
+  border: 1px solid white;
+  padding: 10px;
+}
+.footerEmailRightInput {
+  padding: 20px 20px;
+  border: 5px solid white;
+  outline: 0;
+  width: 300px;
+  transition: border-color 0.15s ease-in-out;
+}
+.footerEmailRightInput::-moz-placeholder {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+.footerEmailRightInput:-ms-input-placeholder {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+.footerEmailRightInput::placeholder {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+.footerEmailRightInput:active {
+  border: 5px solid #333333;
+}
+.footerEmailRightInput:hover {
+  border: 5px solid #333333;
+}
+.footerEmailRightInput:focus-visible {
+  border: 5px solid #333333;
+}
+.footerEmailRightButton {
+  position: absolute;
+  margin-left: -150px;
+  color: white;
+  background-color: #333333;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 24px 35px;
+}
+.footerBottom {
+  margin-top: 50px;
+}
+.footerBottomCards {
+  display: flex;
+  justify-content: space-between;
+}
+.footerBottomCardsLine {
+  border-bottom: #333333 solid 2px;
+}
+.footerBottomCardsItem {
+  width: 20%;
+}
+.footerBottomTextPack {
+  display: flex;
+  flex-direction: column;
+}
+.footerBottomTextPackTitle {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+}
+.footerBottomTextPackLink {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.footerBottomTextPackLink:first-child {
+  margin-top: 20px;
+}
+.footerBottomTextPackLink:last-child {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=footer.module.css.map */
