@@ -135,4 +135,22 @@
 }
 .footerBottomTextPackLink:last-child {
   margin-bottom: 20px;
+}
+.footerBottomTextPackNumber {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.footerBottomTextPackNumber:last-child {
+  margin-left: 15px;
+}
+.footerBottomImagePack {
+  margin-top: 20px;
+  display: flex;
+}
+.footerBottomImagePackCard:first-child {
+  margin-right: 20px;
 }/*# sourceMappingURL=footer.module.css.map */

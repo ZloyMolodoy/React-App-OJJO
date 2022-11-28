@@ -4,6 +4,12 @@ import footer from './styles/footer/footer.module.css'
 
 import sublink from '../components/images/subscribe_icon.png'
 
+import visa from '../components/images/footer/visa.png';
+import mastercard from '../components/images/footer/mastercard.png';
+
+import phone from '../components/images/footer/phone-icon.png';
+import mail from '../components/images/footer/mail-icon.png';
+
 
 const Footer = () => {
 
@@ -51,10 +57,22 @@ const Footer = () => {
                         <div className={footer.footerBottomCardsItem}>
                             <span className={footer.footerBottomTextPackTitle}>оплата</span>
                             <div className={footer.footerBottomCardsLine}></div>
+                            <div className={footer.footerBottomTextPack}>
+                                <span className={footer.footerBottomTextPackLink}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</span>
+                                <div className={footer.footerBottomImagePack}>
+                                    <img className={footer.footerBottomImagePackCard} src={visa} alt='visa' />
+                                    <img className={footer.footerBottomImagePackCard} src={mastercard} alt='mastercard' />
+                                </div>
+                            </div>
                         </div>
                         <div className={footer.footerBottomCardsItem}>
                             <span className={footer.footerBottomTextPackTitle}>контакты</span>
                             <div className={footer.footerBottomCardsLine}></div>
+                            <div className={footer.footer.footerBottomTextPack}>
+                                <div><img src={phone} alt='phone' /><a className={footer.footerBottomTextPackNumber} href='tel:88122345655'>8 (812) 234-56-55</a></div>
+                                <div><img src={phone} alt='phone' /><a className={footer.footerBottomTextPackNumber} href='tel:88122345655'>8 (812) 234-56-55</a></div>
+                                <div><img src={mail} alt='mail' /><a className={footer.footerBottomTextPackNumber} href='mailto:ojjo@ojjo.ru'>ojjo@ojjo.ru</a></div>
+                            </div>
                         </div>
                         <div className={footer.footerBottomCardsItem}>
                             <span className={footer.footerBottomTextPackTitle}>социальные сети</span>

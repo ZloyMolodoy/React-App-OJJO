@@ -150,6 +150,31 @@
                     margin-bottom: 20px;
                 }
             }
+            &Number
+            {
+                text-decoration: none;
+                color: #333333;
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 14px;
+                margin: 10px 0;
+                &:last-child
+                {
+                    margin-left: 15px;
+                }
+            }
+        }
+        &ImagePack
+        {
+            margin-top: 20px;
+            display: flex;
+            &Card
+            {
+                &:first-child
+                {
+                    margin-right: 20px;
+                }
+            }
         }
     }
 }
