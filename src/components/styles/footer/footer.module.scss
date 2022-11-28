@@ -141,39 +141,89 @@
                 font-weight: 400;
                 font-size: 14px;
                 margin: 10px 0;
-                &:first-child
-                {
+
+                &:first-child {
                     margin-top: 20px;
                 }
-                &:last-child
-                {
+
+                &:last-child {
                     margin-bottom: 20px;
                 }
             }
-            &Number
-            {
+
+            &Number {
                 text-decoration: none;
                 color: #333333;
                 font-family: 'Roboto';
                 font-weight: 400;
                 font-size: 14px;
                 margin: 10px 0;
-                &:last-child
-                {
+
+                &:last-child {
                     margin-left: 15px;
+                }
+
+                &Pack {
+                    // margin-top: 5px;
+                    display: flex;
+                    align-items: center;
+
+                    &:first-child {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            &Social
+            {
+                margin-top: 20px;
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+
+        &ImagePack {
+            margin-top: 20px;
+            display: flex;
+
+            &Card {
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+            &Social
+            {
+                margin-top: 20px;
+                &:nth-child(1)
+                {
+                    margin: 0 20px 0 0;
+                }
+                &:nth-child(2)
+                {
+                    margin: 0 20px 0 0;
+                }
+                &:nth-child(3)
+                {
+                    margin: 0 20px 0 0;
                 }
             }
         }
-        &ImagePack
+    }
+    &Warning
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+
+        &TextPack
         {
-            margin-top: 20px;
-            display: flex;
-            &Card
+            &Link
             {
-                &:first-child
-                {
-                    margin-right: 20px;
-                }
+                text-decoration: none;
+                color: #333333;
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 14px;
             }
         }
     }

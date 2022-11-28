@@ -95,7 +95,7 @@ function App() {
                 <NavLink className="blog-image-pack__custom-link"><div className='blog-image-pack__second'><span className='blog-text-pack__card'>Запонки для мужа: <br />7 ключевых правил покупки аксессуара</span></div></NavLink>
                 <NavLink className="blog-image-pack__custom-link"><div className='blog-image-pack__third'><span className='blog-text-pack__card'>Как выбрать обручальные кольца молодоженам</span></div></NavLink>
               </div>
-              <NavLink className='blog-text-pack__link' to='/blog'>ЧИТАТЬ НАШ БЛОГ</NavLink>
+              <div className='blog-text-pack__link-container'><NavLink className='blog-text-pack__link' to='/blog'>ЧИТАТЬ НАШ БЛОГ</NavLink></div>
             </div>
           </div>
         </div>

@@ -270,7 +270,6 @@
     &-text-pack {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin-top: 100px;
 
         &__title {
@@ -279,6 +278,7 @@
             font-size: 28px;
             color: #333333;
             margin-top: 15px;
+            text-align: center;
         }
 
         &__subtitle {
@@ -286,6 +286,14 @@
             font-weight: 400;
             font-size: 18px;
             color: #333333;
+            text-align: center;
+        }
+
+        &__link-container {
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
 
         &__link {
@@ -295,7 +303,7 @@
             font-family: 'Roboto';
             font-size: 14px;
             font-weight: 500;
-            margin-top: 50px;
+            // margin-top: 50px;
             padding: 15px 35px;
         }
 
@@ -312,6 +320,7 @@
     &-image-pack {
         display: flex;
         margin-top: 60px;
+        justify-content: space-between;
 
         &__first {
             background-image: url(/src/components/images/div-blog/first-card.png);
@@ -415,4 +424,80 @@
 .container {
     margin: 0 auto;
     width: 1100px;
+}
+
+@media (max-width:1024.99px) {
+    .catalog-button-pack {
+        &__item {
+            width: 120px;
+        }
+    }
+
+    .blog-image-pack {
+        &__first {
+            width: 270px;
+        }
+
+        &__second {
+            width: 270px;
+        }
+
+        &__third {
+            width: 270px;
+        }
+    }
+
+    .container {
+        width: 900px;
+    }
+}
+@media (max-width: 768.99px) {
+    .container
+    {
+        width: 650px;
+    }
+    .catalog-cataloge-pack
+    {
+        &__first
+        {
+            width: 250px;
+        }
+        &__second
+        {
+            width: 250px;
+            margin: 0;
+        }
+        &__third
+        {
+            width: 250px;
+        }
+        &__fourth
+        {
+            width: 250px;
+        }
+        &__fiveth
+        {
+            width: 250px;
+            margin: 0;
+        }
+        &__sixth
+        {
+            width: 250px;
+        }
+    }
+    .blog-image-pack
+    {
+        &__first
+        {
+            width: 200px;
+        }
+        &__second
+        {
+            width: 200px;
+        }
+        &__third
+        {
+            width: 200px;
+        }
+    }
 }

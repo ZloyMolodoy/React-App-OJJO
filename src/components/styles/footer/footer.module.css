@@ -147,10 +147,47 @@
 .footerBottomTextPackNumber:last-child {
   margin-left: 15px;
 }
+.footerBottomTextPackNumberPack {
+  display: flex;
+  align-items: center;
+}
+.footerBottomTextPackNumberPack:first-child {
+  margin-top: 20px;
+}
+.footerBottomTextPackSocial {
+  margin-top: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
 .footerBottomImagePack {
   margin-top: 20px;
   display: flex;
 }
 .footerBottomImagePackCard:first-child {
   margin-right: 20px;
+}
+.footerBottomImagePackSocial {
+  margin-top: 20px;
+}
+.footerBottomImagePackSocial:nth-child(1) {
+  margin: 0 20px 0 0;
+}
+.footerBottomImagePackSocial:nth-child(2) {
+  margin: 0 20px 0 0;
+}
+.footerBottomImagePackSocial:nth-child(3) {
+  margin: 0 20px 0 0;
+}
+.footerWarning {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.footerWarningTextPackLink {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
 }/*# sourceMappingURL=footer.module.css.map */
