@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import Footer from '../components/Footer';
+import { Route, NavLink } from 'react-router-dom';
+
+import Footer from '../Footer';
 
 import logo from '../images/logo.png'
 import search from '../images/nav-search.png';
