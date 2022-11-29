@@ -122,7 +122,7 @@
   margin-top: 50px;
 }
 .catalog-cataloge-pack__first {
-  background-image: url(./components/images/div-cataloge/first.png);
+  background-image: url(./components/images/div-cataloge/marriage/first.png);
   background-repeat: no-repeat;
   width: 300px;
   height: 300px;
@@ -130,7 +130,7 @@
   align-items: flex-end;
 }
 .catalog-cataloge-pack__second {
-  background-image: url(./components/images/div-cataloge/second.png);
+  background-image: url(./components/images/div-cataloge/marriage/second.png);
   background-repeat: no-repeat;
   width: 300px;
   height: 300px;
@@ -139,7 +139,7 @@
   align-items: flex-end;
 }
 .catalog-cataloge-pack__third {
-  background-image: url(./components/images/div-cataloge/third.png);
+  background-image: url(./components/images/div-cataloge/marriage/third.png);
   background-repeat: no-repeat;
   width: 300px;
   height: 300px;
@@ -147,7 +147,7 @@
   align-items: flex-end;
 }
 .catalog-cataloge-pack__fourth {
-  background-image: url(./components/images/div-cataloge/fourth.png);
+  background-image: url(./components/images/div-cataloge/marriage/fourth.png);
   background-repeat: no-repeat;
   width: 300px;
   height: 300px;
@@ -155,7 +155,7 @@
   align-items: flex-end;
 }
 .catalog-cataloge-pack__fiveth {
-  background-image: url(./components/images/div-cataloge/fiveth.png);
+  background-image: url(./components/images/div-cataloge/marriage/fiveth.png);
   background-repeat: no-repeat;
   width: 300px;
   height: 300px;
@@ -164,7 +164,7 @@
   align-items: flex-end;
 }
 .catalog-cataloge-pack__sixth {
-  background-image: url(./components/images/div-cataloge/sixth.png);
+  background-image: url(./components/images/div-cataloge/marriage/sixth.png);
   background-repeat: no-repeat;
   width: 300px;
   height: 300px;
