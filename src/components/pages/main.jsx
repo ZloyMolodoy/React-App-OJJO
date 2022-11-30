@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { Route, NavLink } from 'react-router-dom';
 
@@ -8,246 +8,15 @@ import logo from '../images/logo.png'
 import search from '../images/nav-search.png';
 import cocoLogo from '../images/Cocofine-Jewelry-icon.png'
 
-const catalogButtonsPack = ["СВАДЬБА", "МУЖУ", "ЖЕНЕ", "ПАРТНЕРУ", "КОЛЛЕКЦИИ", "РЕДКОСТЬ"]
-const catalogCardsPack = [
-  [
-    {
-      catalog: "marriage",
-      content: [
-        [
-          {
-            text: "КОЛЬЦА",
-            img: "url(./components/images//first.png)",
-          },
-
-          {
-            text: "СЕРЬГИ",
-            img: "url(./components/images/div-cataloge/second.png)",
-          },
-
-          {
-            text: "ПОДВЕСКИ",
-            img: "url(./components/images/div-cataloge/third.png)",
-          },
-        ],
-
-        [
-          {
-            text: "ЗАПОНКИ",
-            img: "",
-          },
-
-          {
-            text: "БРАСЛЕТЫ",
-            img: "",
-          },
-
-          {
-            text: "ЧАСЫ",
-            img: "",
-          }
-        ]
-      ]
-    }
-  ],
-
-  [
-    [
-      {
-        text: "КОЛЬЦА",
-        img: "",
-      },
-
-      {
-        text: "СЕРЬГИ",
-        img: "",
-      },
-
-      {
-        text: "ПОДВЕСКИ",
-        img: "",
-      },
-    ],
-
-    [
-      {
-        text: "ЗАПОНКИ",
-        img: "",
-      },
-
-      {
-        text: "БРАСЛЕТЫ",
-        img: "",
-      },
-
-      {
-        text: "ЧАСЫ",
-        img: "",
-      }
-    ]
-  ],
-
-  [
-    [
-      {
-        text: "КОЛЬЦА",
-        img: "",
-      },
-
-      {
-        text: "СЕРЬГИ",
-        img: "",
-      },
-
-      {
-        text: "ПОДВЕСКИ",
-        img: "",
-      },
-    ],
-
-    [
-      {
-        text: "ЗАПОНКИ",
-        img: "",
-      },
-
-      {
-        text: "БРАСЛЕТЫ",
-        img: "",
-      },
-
-      {
-        text: "ЧАСЫ",
-        img: "",
-      }
-    ]
-  ],
-
-  [
-    [
-      {
-        text: "КОЛЬЦА",
-        img: "",
-      },
-
-      {
-        text: "СЕРЬГИ",
-        img: "",
-      },
-
-      {
-        text: "ПОДВЕСКИ",
-        img: "",
-      },
-    ],
-
-    [
-      {
-        text: "ЗАПОНКИ",
-        img: "",
-      },
-
-      {
-        text: "БРАСЛЕТЫ",
-        img: "",
-      },
-
-      {
-        text: "ЧАСЫ",
-        img: "",
-      }
-    ]
-  ],
-
-  [
-    [
-      {
-        text: "КОЛЬЦА",
-        img: "",
-      },
-
-      {
-        text: "СЕРЬГИ",
-        img: "",
-      },
-
-      {
-        text: "ПОДВЕСКИ",
-        img: "",
-      },
-    ],
-
-    [
-      {
-        text: "ЗАПОНКИ",
-        img: "",
-      },
-
-      {
-        text: "БРАСЛЕТЫ",
-        img: "",
-      },
-
-      {
-        text: "ЧАСЫ",
-        img: "",
-      }
-    ]
-  ],
-]
-
-let firstCatalog = [];
-let secondCatalog = [];
-
-
 export function Main() {
-  const [catalogState, setCatalog] = useState("btn0")
-
-  function changeStyle(event) {
-    const tempArrayCatalogButtons = [...document.getElementsByClassName("catalog-button-pack__item")]
-
-    tempArrayCatalogButtons.map(item => {
-      item.classList.remove("catalog-button-pack__active")
-
-      return 0
-    })
-
-    event.target.classList.add("catalog-button-pack__active")
-    setCatalog(event.target.id)
-  }
-
-  function renderCatalogButtons() {
-    return catalogButtonsPack.map((item, index) => <button id={"btn" + index} key={index + "ctlgbtn"} className={'catalog-button-pack__item ' + (index === 0 ? "catalog-button-pack__active" : " ")} onClick={changeStyle}>{item}</button>)
-  }
-
-  function renderCatalogCards() {
-    firstCatalog = catalogButtonsPack["btn" + (catalogState[3] - 1)]
-    secondCatalog = catalogButtonsPack[catalogState]
-
-    return (
-      <div className='catalog-cataloge-pack__content'>
-        <div className='catalog-cataloge-pack'>
-          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__first'><p className='catalog-cataloge-pack__text'>КОЛЬЦА</p></div></NavLink>
-          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__second'><p className='catalog-cataloge-pack__text'>СЕРЬГИ</p></div></NavLink>
-          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__third'><p className='catalog-cataloge-pack__text'>ПОДВЕСКИ</p></div></NavLink>
-        </div>
-        <div className='catalog-cataloge-pack'>
-          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__fourth'><p className='catalog-cataloge-pack__text'>ЗАПОНКИ</p></div></NavLink>
-          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__fiveth'><p className='catalog-cataloge-pack__text'>БРАСЛЕТЫ</p></div></NavLink>
-          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__sixth'><p className='catalog-cataloge-pack__text'>ЧАСЫ</p></div></NavLink>
-        </div>
-      </div>
-    )
-  }
 
   return (
-
     <div className='App'>
       <div className='head'>
         <div className='container'>
           <div className='nav'>
             <div className='nav-links'>
-              <NavLink to="/src/components/contacts.jsx" className={"nav-links__item"}>Карта</NavLink>
+              <NavLink to="/contacts" className={"nav-links__item"}>Карта</NavLink>
               <NavLink to="/designers" className={"nav-links__item"}>Дизайнерам</NavLink>
               <NavLink to="/jobs" className={"nav-links__item"}>Вакансии</NavLink>
             </div>
@@ -283,9 +52,24 @@ export function Main() {
             <p className='catalog-text-pack__subtitle'>К мероприятиям</p>
             <p className='catalog-text-pack__title'>Настоящая красота здесь!</p>
             <div className='catalog-button-pack'>
-              {
-                renderCatalogButtons()
-              }
+              <button id='btn0' className='catalog-button-pack__item catalog-button-pack__active'>СВАДЬБА</button>
+              <button id='btn1' className='catalog-button-pack__item' >МУЖУ</button>
+              <button id='btn2' className='catalog-button-pack__item'>ЖЕНЕ</button>
+              <button id='btn3' className='catalog-button-pack__item'>ПАРТНЕРУ</button>
+              <button id='btn4' className='catalog-button-pack__item'>КОЛЛЕКЦИИ</button>
+              <button id='btn5' className='catalog-button-pack__item'>РЕДКОСТЬ</button>
+            </div>
+            <div className='catalog-cataloge-pack__content'>
+              <div className='catalog-cataloge-pack'>
+                <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__first'><p className='catalog-cataloge-pack__text'>КОЛЬЦА</p></div></NavLink>
+                <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__second'><p className='catalog-cataloge-pack__text'>СЕРЬГИ</p></div></NavLink>
+                <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__third'><p className='catalog-cataloge-pack__text'>ПОДВЕСКИ</p></div></NavLink>
+              </div>
+              <div className='catalog-cataloge-pack'>
+                <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__fourth'><p className='catalog-cataloge-pack__text'>ЗАПОНКИ</p></div></NavLink>
+                <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__fiveth'><p className='catalog-cataloge-pack__text'>БРАСЛЕТЫ</p></div></NavLink>
+                <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__sixth'><p className='catalog-cataloge-pack__text'>ЧАСЫ</p></div></NavLink>
+              </div>
             </div>
           </div>
         </div>

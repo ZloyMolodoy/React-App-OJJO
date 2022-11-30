@@ -31,6 +31,12 @@
             color: white;
             display: flex;
             align-items: center;
+            transition: text-decoration 0.5s ease-in-out;
+
+            &:hover
+            {
+                text-decoration: underline;
+            }
         }
 
         &__search-icon {
@@ -122,14 +128,25 @@
             font-weight: 500;
             font-size: 16px;
             background-color: transparent;
-            border: 1px solid #D6D6D6;
+            border: 2px solid #D6D6D6;
             width: 130px;
             height: 50px;
             margin: 0 15px;
             cursor: pointer;
+            transition: border-color 0.15s ease-in-out;
+
+            &:focus-visible
+            {
+                border: 2px solid #333333;
+            }
+            &:hover
+            {
+                border: 2px solid #333333;
+            }
         }
 
         &__active {
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
             background-color: #333333 !important;
             color: white !important;
             border: none !important;
