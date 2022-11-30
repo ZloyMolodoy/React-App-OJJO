@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 import { Route, NavLink } from 'react-router-dom';
 
@@ -19,29 +19,29 @@ const catalogCardsPack = [
             text: "КОЛЬЦА",
             img: "url(./components/images//first.png)",
           },
-          
+
           {
             text: "СЕРЬГИ",
             img: "url(./components/images/div-cataloge/second.png)",
           },
-          
+
           {
             text: "ПОДВЕСКИ",
             img: "url(./components/images/div-cataloge/third.png)",
           },
         ],
-        
+
         [
           {
             text: "ЗАПОНКИ",
             img: "",
           },
-          
+
           {
             text: "БРАСЛЕТЫ",
             img: "",
           },
-          
+
           {
             text: "ЧАСЫ",
             img: "",
@@ -57,137 +57,137 @@ const catalogCardsPack = [
         text: "КОЛЬЦА",
         img: "",
       },
-      
+
       {
         text: "СЕРЬГИ",
         img: "",
       },
-      
+
       {
         text: "ПОДВЕСКИ",
         img: "",
       },
     ],
-    
+
     [
       {
         text: "ЗАПОНКИ",
         img: "",
       },
-      
+
       {
         text: "БРАСЛЕТЫ",
         img: "",
       },
-      
+
       {
         text: "ЧАСЫ",
         img: "",
       }
     ]
   ],
-  
+
   [
     [
       {
         text: "КОЛЬЦА",
         img: "",
       },
-      
+
       {
         text: "СЕРЬГИ",
         img: "",
       },
-      
+
       {
         text: "ПОДВЕСКИ",
         img: "",
       },
     ],
-    
+
     [
       {
         text: "ЗАПОНКИ",
         img: "",
       },
-      
+
       {
         text: "БРАСЛЕТЫ",
         img: "",
       },
-      
+
       {
         text: "ЧАСЫ",
         img: "",
       }
     ]
   ],
-  
+
   [
     [
       {
         text: "КОЛЬЦА",
         img: "",
       },
-      
+
       {
         text: "СЕРЬГИ",
         img: "",
       },
-      
+
       {
         text: "ПОДВЕСКИ",
         img: "",
       },
     ],
-    
+
     [
       {
         text: "ЗАПОНКИ",
         img: "",
       },
-      
+
       {
         text: "БРАСЛЕТЫ",
         img: "",
       },
-      
+
       {
         text: "ЧАСЫ",
         img: "",
       }
     ]
   ],
-  
+
   [
     [
       {
         text: "КОЛЬЦА",
         img: "",
       },
-      
+
       {
         text: "СЕРЬГИ",
         img: "",
       },
-      
+
       {
         text: "ПОДВЕСКИ",
         img: "",
       },
     ],
-    
+
     [
       {
         text: "ЗАПОНКИ",
         img: "",
       },
-      
+
       {
         text: "БРАСЛЕТЫ",
         img: "",
       },
-      
+
       {
         text: "ЧАСЫ",
         img: "",
@@ -200,49 +200,48 @@ let firstCatalog = [];
 let secondCatalog = [];
 
 
-export function Main(){
-    // const navigation = React.na
-    const [catalogState, setCatalog ] = useState("btn0")
-  
-    function changeStyle(event) {
-      const tempArrayCatalogButtons = [...document.getElementsByClassName("catalog-button-pack__item")]
-  
-      tempArrayCatalogButtons.map(item => {
-        item.classList.remove("catalog-button-pack__active")
-  
-        return 0
-      })
-  
-      event.target.classList.add("catalog-button-pack__active")
-      setCatalog(event.target.id)
-    }
-  
-    function renderCatalogButtons() {
-      return catalogButtonsPack.map((item, index) => <button id={"btn" + index} key={index + "ctlgbtn"} className={'catalog-button-pack__item ' + (index === 0 ? "catalog-button-pack__active" : " ")} onClick={changeStyle}>{item}</button>)
-    }
-  
-    function renderCatalogCards() {
-      firstCatalog = catalogButtonsPack["btn" + (catalogState[3] - 1)]
-      secondCatalog = catalogButtonsPack[catalogState]
-  
-      return (
-        <div className='catalog-cataloge-pack__content'>
-          <div className='catalog-cataloge-pack'>
-            <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__first'><p className='catalog-cataloge-pack__text'>КОЛЬЦА</p></div></NavLink>
-            <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__second'><p className='catalog-cataloge-pack__text'>СЕРЬГИ</p></div></NavLink>
-            <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__third'><p className='catalog-cataloge-pack__text'>ПОДВЕСКИ</p></div></NavLink>
-          </div>
-          <div className='catalog-cataloge-pack'>
-            <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__fourth'><p className='catalog-cataloge-pack__text'>ЗАПОНКИ</p></div></NavLink>
-            <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__fiveth'><p className='catalog-cataloge-pack__text'>БРАСЛЕТЫ</p></div></NavLink>
-            <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__sixth'><p className='catalog-cataloge-pack__text'>ЧАСЫ</p></div></NavLink>
-          </div>
-        </div>
-      )
-    }
-  
+export function Main() {
+  const [catalogState, setCatalog] = useState("btn0")
+
+  function changeStyle(event) {
+    const tempArrayCatalogButtons = [...document.getElementsByClassName("catalog-button-pack__item")]
+
+    tempArrayCatalogButtons.map(item => {
+      item.classList.remove("catalog-button-pack__active")
+
+      return 0
+    })
+
+    event.target.classList.add("catalog-button-pack__active")
+    setCatalog(event.target.id)
+  }
+
+  function renderCatalogButtons() {
+    return catalogButtonsPack.map((item, index) => <button id={"btn" + index} key={index + "ctlgbtn"} className={'catalog-button-pack__item ' + (index === 0 ? "catalog-button-pack__active" : " ")} onClick={changeStyle}>{item}</button>)
+  }
+
+  function renderCatalogCards() {
+    firstCatalog = catalogButtonsPack["btn" + (catalogState[3] - 1)]
+    secondCatalog = catalogButtonsPack[catalogState]
+
     return (
-        
+      <div className='catalog-cataloge-pack__content'>
+        <div className='catalog-cataloge-pack'>
+          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__first'><p className='catalog-cataloge-pack__text'>КОЛЬЦА</p></div></NavLink>
+          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__second'><p className='catalog-cataloge-pack__text'>СЕРЬГИ</p></div></NavLink>
+          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__third'><p className='catalog-cataloge-pack__text'>ПОДВЕСКИ</p></div></NavLink>
+        </div>
+        <div className='catalog-cataloge-pack'>
+          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__fourth'><p className='catalog-cataloge-pack__text'>ЗАПОНКИ</p></div></NavLink>
+          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__fiveth'><p className='catalog-cataloge-pack__text'>БРАСЛЕТЫ</p></div></NavLink>
+          <NavLink className='catalog-cataloge-pack-navlink' to='/catalog'><div className='catalog-cataloge-pack__sixth'><p className='catalog-cataloge-pack__text'>ЧАСЫ</p></div></NavLink>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+
     <div className='App'>
       <div className='head'>
         <div className='container'>
@@ -329,7 +328,7 @@ export function Main(){
           </div>
         </div>
       </div>
-    <Footer />
-  </div>
-    )
+      <Footer />
+    </div>
+  )
 }
