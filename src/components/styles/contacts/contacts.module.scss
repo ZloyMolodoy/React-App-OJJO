@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.contacts {
+    &Breadcrumbs {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        &Item {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 14px;
+            color: #333;
+
+            &:nth-child(2) {
+                padding: 0 20px;
+            }
+        }
+    }
+
+    &content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
+        &TextPack {
+            display: flex;
+            margin-top: 40px;
+
+            &Title {
+                color: #333;
+                font-family: 'Roboto';
+                font-weight: 600;
+                font-size: 24px;
+            }
+        }
+
+        &Card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &Title {
+                font-family: 'Roboto';
+                font-weight: 600;
+                font-size: 18px;
+                color: #333;
+            }
+
+            &Subtitle {
+                color: #333;
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                margin-top: 25px;
+                &:last-child
+                {
+                    margin-top: 15px !important;
+                    margin-left: 30px;
+                }
+            }
+            &Image
+            {
+                padding-right: 10px;
+            }
+        }
+        &map
+        {
+            
+        }
+    }
+}
