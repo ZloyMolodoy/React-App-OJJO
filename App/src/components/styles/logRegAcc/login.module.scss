@@ -1,0 +1,45 @@
+.login {
+    background-color: #1E1E1E;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &Upper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &Link {
+            color: white;
+            font-family: 'Roboto';
+            margin-left: -23%;
+        }
+    }
+
+    &Case {
+        margin-top: 100px;
+        background: #282727;
+        border: 2px solid #4D4B4B;
+        border-radius: 2px;
+        width: 660px;
+
+        &Title {
+            color: white;
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 24px;
+            text-align: center;
+        }
+        &SubTitle
+        {
+            color: white;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+    }
+}

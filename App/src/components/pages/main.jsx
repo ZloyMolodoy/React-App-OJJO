@@ -23,7 +23,7 @@ export function Main() {
             <img src={logo} className={"nav-logo"} alt="logo"></img>
             <div className='nav-links'>
               <NavLink to="/search" className={"nav-links__item"}><img alt='search' className='nav-links__search-icon' src={search}></img>Поиск</NavLink>
-              <NavLink to="/loginRegister" className={"nav-links__item"}>Вход/Регистрация</NavLink>
+              <NavLink to="/login" className={"nav-links__item"}>Вход/Регистрация</NavLink>
               <NavLink to="/favorites" className={"nav-links__item"}>Избранное</NavLink>
             </div>
           </div>
