@@ -30,11 +30,29 @@
   font-weight: 500;
   font-size: 24px;
   text-align: center;
+  margin-top: 20px;
 }
-.loginCaseSubTitle {
+.loginCaseEmail {
   color: white;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 18px;
   margin-top: 50px;
+}
+.loginCasePassword {
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+  color: white;
+}
+.loginCaseInput {
+  background-color: #282727;
+  border: #4D4B4B solid 2px;
+  height: 25px;
+  margin-top: 10px;
+}
+.loginCaseInput::value {
+  color: white;
 }/*# sourceMappingURL=login.module.css.map */

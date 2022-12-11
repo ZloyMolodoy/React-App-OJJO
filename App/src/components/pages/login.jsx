@@ -14,13 +14,13 @@ export function Login() {
         </div>
         <div className={login.loginCase}>
             <p className={login.loginCaseTitle}>Вход</p>
-            <p className={login.loginCaseSubTitle}>Email</p>
-            <input />
+            <p className={login.loginCaseEmail}>Email</p>
+            <input className={login.loginCaseInput} />
             <div>
-            <p className={login.loginCaseSubTitle}>Пароль</p>
+            <p className={login.loginCasePassword}>Пароль</p>
             <Link>Забыли пароль?</Link>
             </div>
-            <input />
+            <input className={login.loginCaseInput} />
             <button>Войти</button>
         </div>
         <Link>Правила сервера</Link>
